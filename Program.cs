@@ -8,17 +8,17 @@ namespace POO
         static void Main(string[]args)
         {
             //Valores Válidos
-            Retangulo r = new Retangulo();
-            r.DefinirMedidas(30, 20);
+            // Retangulo r = new Retangulo();
+            // r.DefinirMedidas(30, 20);
 
-            Console.WriteLine($"Área: {r.ObterArea()}");
+            // Console.WriteLine($"Área: {r.ObterArea()}");
             
             
-            //Valores inválidos
-            Retangulo r2 = new Retangulo();
-            r2.DefinirMedidas(0, -1);
+            // //Valores inválidos
+            // Retangulo r2 = new Retangulo();
+            // r2.DefinirMedidas(0, -1);
 
-            Console.WriteLine($"Área: {r2.ObterArea()}");
+            // Console.WriteLine($"Área: {r2.ObterArea()}");
             
             
             
