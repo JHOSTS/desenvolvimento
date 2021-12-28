@@ -8,6 +8,9 @@ namespace POO.Models
 
         public int Idade {get; set; }
 
+
+        public string Documento {get; set;}
+
         public void Apresentar()
         {
             Console.WriteLine($"Olá, me chamo {Nome} e tenho {Idade}");
