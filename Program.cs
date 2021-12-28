@@ -7,23 +7,51 @@ namespace POO
     {
         static void Main(string[]args)
         {
-            Professor p1 = new Professor();
-            p1.Salario = 5000;
-            p1.Nome = "Antônio Carlos";
-            p1.Idade = 18;
-            p1.Documento = "5844569554"
-
-            p1.Apresentar();
-
-            Console.WriteLine($"Salário: {p1.Salario}");
+            Computador comp = new Computador();
+            System.Console.WriteLine(comp.ToString());
 
 
 
 
 
 
+//********************************************************************//
+
+            // Corrente c = new Corrente();
+            // c.Creditar(1000);
+
+            // c.ExibirSaldo();
 
 
+//********************************************************************//
+
+            // Calculadora calc = new Calculadora();
+            // System.Console.WriteLine("Resultado da primeira soma: " + calc.Somar(5, 10));
+            // System.Console.WriteLine("Resultado da segunda soma: " + calc.Somar(5, 10, 7));
+
+
+
+
+
+
+
+//********************************************************************//
+
+            // Aluno p1 = new Aluno();
+            // p1.Nota = 8;
+            // p1.Nome = "Antônio Carlos";
+            // p1.Idade = 18;
+
+            // p1.Apresentar();
+
+            // Professor p2 = new Professor();
+            // p2.Salario = 8000;
+            // p2.Nome = "Márcio";
+            // p2.Idade = 38;
+
+            // p2.Apresentar();
+
+//********************************************************************//
 
 
             //Valores Válidos
@@ -39,7 +67,7 @@ namespace POO
 
             // Console.WriteLine($"Área: {r2.ObterArea()}");
             
-            
+//********************************************************************//           
             
             // Pessoa p1 = new Pessoa();
 
