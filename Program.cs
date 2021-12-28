@@ -1,4 +1,5 @@
 using System;
+using POO.Interfaces;
 using POO.Models;
 
 namespace POO
@@ -7,13 +8,15 @@ namespace POO
     {
         static void Main(string[]args)
         {
-            Computador comp = new Computador();
-            System.Console.WriteLine(comp.ToString());
+            ICalculadora calc = new Calculadora();
+            System.Console.WriteLine(calc.Subtrair(20, 13));
 
 
 
 
-
+//********************************************************************//
+            // Computador comp = new Computador();
+            // System.Console.WriteLine(comp.ToString());
 
 //********************************************************************//
 
