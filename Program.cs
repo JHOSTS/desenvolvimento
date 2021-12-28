@@ -1,4 +1,5 @@
 using System;
+using POO.Helper;
 using POO.Interfaces;
 using POO.Models;
 
@@ -8,11 +9,20 @@ namespace POO
     {
         static void Main(string[]args)
         {
-            ICalculadora calc = new Calculadora();
-            System.Console.WriteLine(calc.Subtrair(20, 13));
+            var caminho = "C:\\Users\\Jdds_\\OneDrive\\Área de Trabalho\\ADS\\Cursos complementares\\Bootcamp Decola Tech 2ed\\POO\\POO\\AulaArquivos";
+
+            FileHelper helper = new FileHelper();
+            helper.ListarArquivosDiretorios(caminho); 
+//********************************************************************//
+            // var caminho = "C:\\Users\\Jdds_\\OneDrive\\Área de Trabalho\\ADS\\Cursos complementares\\Bootcamp Decola Tech 2ed\\POO\\POO\\AulaArquivos";
+
+            // FileHelper helper = new FileHelper();
+            // helper.ListarDiretorios(caminho);
 
 
-
+//********************************************************************//
+            // ICalculadora calc = new Calculadora();
+            // System.Console.WriteLine(calc.Subtrair(20, 13));
 
 //********************************************************************//
             // Computador comp = new Computador();
