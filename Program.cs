@@ -2,6 +2,9 @@ using System;
 using POO.Helper;
 using POO.Interfaces;
 using POO.Models;
+using System.IO;
+using System.Collections.Generic;
+
 
 namespace POO
 {
@@ -9,10 +12,56 @@ namespace POO
     {
         static void Main(string[]args)
         {
-            var caminho = "C:\\Users\\Jdds_\\OneDrive\\Área de Trabalho\\ADS\\Cursos complementares\\Bootcamp Decola Tech 2ed\\POO\\POO\\AulaArquivos";
-
             FileHelper helper = new FileHelper();
-            helper.ListarArquivosDiretorios(caminho); 
+
+            var caminho = "C:\\Users\\Jdds_\\OneDrive\\Área de Trabalho\\ADS\\Cursos complementares\\Bootcamp Decola Tech 2ed\\POO\\POO\\AulaArquivos";
+            var caminhoPathCombine = Path.Combine(caminho, "Pasta Teste2");
+            var caminhoArquivo = Path.Combine(caminho, "arquivo-teste-stream.txt");
+            var caminhoArquivoTeste = Path.Combine(caminho, "arquivo-teste.txt");
+            var caminhoArquivoTesteCopia = Path.Combine(caminho, "arquivo-teste-bkp.txt");
+            var novoCaminhoArquivo = Path.Combine(caminho, "Pasta Teste2", "arquivo-teste-stream.txt");
+
+            var listaString = new List<string> {"Linha 1", "Linha 2", "Linha 3"};
+            var listaStringContinuacao = new List<string> {"Linha4", "Linha 5", "Linha 6"};
+
+            helper.DeletarArquivo(caminhoArquivoTesteCopia);
+
+//********************************************************************// 
+            //helper.CopiarArquivo(caminhoArquivoTeste, caminhoArquivoTesteCopia, false);
+
+//********************************************************************//  
+            //helper.MoverArquivo(caminhoArquivo, novoCaminhoArquivo, false);
+
+//********************************************************************//            
+            //helper.LerArquivoStream(caminhoArquivo);
+
+//********************************************************************//
+            // helper.CriarTextoStream(caminhoArquivo, listaString);
+            // helper.AdicionarTextoStream(caminhoArquivo, listaStringContinuacao);
+
+//********************************************************************//
+            // helper.CriarArquivoTexto(caminhoArquivo, "Olá, isto é um teste de escrita de arquivo!");
+
+//********************************************************************//
+            // var caminho = "C:\\Users\\Jdds_\\OneDrive\\Área de Trabalho\\ADS\\Cursos complementares\\Bootcamp Decola Tech 2ed\\POO\\POO\\AulaArquivos";
+            // var caminhoPathCombine = Path.Combine(caminho, "Pasta Teste1");
+
+            // helper.ApagarDiretorio(caminhoPathCombine, true);
+
+//********************************************************************//
+            // var caminhoPathCombine = Path.Combine(caminho, "PastaTeste3", "SubPastaTeste3");
+
+            // FileHelper helper = new FileHelper();
+
+            // Console.WriteLine("Criando diretório: \n\n" + caminhoPathCombine);
+            // helper.CriarDiretorio(Path.Combine(caminhoPathCombine));
+
+
+//********************************************************************//
+            // var caminho = "C:\\Users\\Jdds_\\OneDrive\\Área de Trabalho\\ADS\\Cursos complementares\\Bootcamp Decola Tech 2ed\\POO\\POO\\AulaArquivos";
+
+            // FileHelper helper = new FileHelper();
+            // helper.ListarArquivosDiretorios(caminho); 
 //********************************************************************//
             // var caminho = "C:\\Users\\Jdds_\\OneDrive\\Área de Trabalho\\ADS\\Cursos complementares\\Bootcamp Decola Tech 2ed\\POO\\POO\\AulaArquivos";
 
